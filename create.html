@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Skill Listing</title>
+  <link rel="stylesheet" href="create.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2 class="form-title">📚 Create New Skill Listing</h2>
+    <p class="form-subtitle">Share your expertise with others by creating a new skill listing</p>
+
+    <form class="skill-form">
+      <!-- Title -->
+      <div class="form-group">
+        <label for="title">* Title</label>
+        <input type="text" id="title" placeholder="E.g., Piano Lessons">
+      </div>
+
+      <!-- Description -->
+      <div class="form-group">
+        <label for="description">* Description</label>
+        <textarea id="description" placeholder="Describe what you'll teach..."></textarea>
+      </div>
+
+      <!-- Duration and Category -->
+      <div class="form-group form-row">
+        <div>
+          <label for="duration">* Duration (hours)</label>
+          <input type="number" id="duration" placeholder="0">
+        </div>
+        <div>
+          <label for="category">* Category</label>
+          <select id="category">
+            <option value="" disabled selected>Select a category</option>
+            <option value="technology">Technology</option>
+            <option value="music">Music</option>
+            <option value="arts">Arts</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Requirements -->
+      <div class="form-group">
+        <label for="requirements">Requirements</label>
+        <textarea id="requirements" placeholder="Any prerequisites or materials needed..."></textarea>
+      </div>
+
+      <!-- Availability -->
+      <div class="form-group">
+        <label for="availability">📅 Availability</label>
+        <div class="availability">
+          <select>
+            <option value="" disabled selected>Day</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+          </select>
+          <input type="time">
+          <input type="time">
+          <button type="button" class="add-time-slot">+ Add Time Slot</button>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="submit-button">📝 Create Skill Listing</button>
+    </form>
+  </div>
+</body>
+</html>

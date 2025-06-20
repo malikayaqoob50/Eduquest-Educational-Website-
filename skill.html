@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+  <link rel="stylesheet" href="skill.css">
+</head>
+<body>
+ 
+
+  
+  <main class="main-content">
+    <section class="skills-section">
+      <div class="section-header">
+        <h1 class="section-title">My Skills</h1>
+        <p class="section-description">Manage your skill listings and view incoming requests</p>
+        <button class="add-skill-btn">+ Add New Skill</button>
+      </div>
+
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Duration (hours)</th>
+            <th>Status</th>
+            <th>Pending Requests</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>C++</td>
+            <td>TECHNOLOGY</td>
+            <td>12</td>
+            <td><span class="status-active">ACTIVE</span></td>
+            <td>1 <span class="notification-icon">🔔</span></td>
+            <td>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pagination">
+        <button class="page-btn">&lt;</button>
+        <span class="current-page">1</span>
+        <button class="page-btn">&gt;</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
